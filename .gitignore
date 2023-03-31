@@ -3,3 +3,5 @@
 /workspace.
 .txt
 .idea
+env.*
+target/*
