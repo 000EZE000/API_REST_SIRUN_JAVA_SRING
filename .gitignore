@@ -5,3 +5,8 @@
 .idea
 env.*
 target/*
+.classpath
+.factorypath
+.project
+.settings/
+
