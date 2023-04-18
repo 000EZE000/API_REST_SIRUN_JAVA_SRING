@@ -15,18 +15,15 @@ public class User implements IUser {
   @Getter @Setter
   private String password;
   @Getter @Setter
-  private Integer age;
-  @Getter @Setter
   private String photo = GetPhotoDefault.get();
   @Getter
   private Roles  rol = Roles.CLIENT;
 
-  public User(String name, String lastName, String email, String password, Integer age) {
+  public User(String name, String lastName, String email, String password) {
     this.name = name;
     this.lastName = lastName;
     this.email = email;
     this.password = password;
-    this.age = age;
   }
 public User(){}
 

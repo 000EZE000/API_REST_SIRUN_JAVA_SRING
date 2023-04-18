@@ -8,7 +8,6 @@ public interface IUser {
   String getEmail();
   String getPassword();
   String getPhoto();
-  Integer getAge();
   Roles getRol();
 
 
@@ -17,6 +16,5 @@ public interface IUser {
   void setEmail(String email);
   void setPassword(String password);
   void setPhoto(String photo);
-  void setAge(Integer age);
   
 }
