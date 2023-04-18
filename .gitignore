@@ -9,4 +9,4 @@ target/*
 .factorypath
 .project
 .settings/
-
+*.http
