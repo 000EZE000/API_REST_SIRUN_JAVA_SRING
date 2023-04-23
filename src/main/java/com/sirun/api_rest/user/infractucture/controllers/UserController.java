@@ -23,7 +23,7 @@ public class UserController {
   @PostMapping("sign_up")
   public ResponseEntity<String> SignUP(@RequestBody User request){
     try {
-      servicesUser.create(request);
+      servicesUser.createUser(request);
     } catch(IllegalArgumentException error){
       return new ResponseEntity<String>(error.getMessage(), HttpStatus.BAD_REQUEST);
     }
