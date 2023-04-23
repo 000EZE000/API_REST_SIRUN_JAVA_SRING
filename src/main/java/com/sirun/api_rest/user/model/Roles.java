@@ -1,5 +1,5 @@
 package com.sirun.api_rest.user.model;
 
-enum Roles{
-CLIENT
+public enum Roles {
+  CLIENT
 }
