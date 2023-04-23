@@ -6,5 +6,6 @@ public interface IUseCaseUser {
 
   User create(User user);
   User update(User user);
-  void  delete(String email);  
+  void delete(String email);  
+  User findByEmail(String email);
 }
