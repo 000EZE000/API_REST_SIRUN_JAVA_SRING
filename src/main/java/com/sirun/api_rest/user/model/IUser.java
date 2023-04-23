@@ -10,10 +10,8 @@ public interface IUser {
   String getPhoto();
   Roles getRol();
 
-
   void setName(String name);
   void setLastName(String lastName);
-  void setEmail(String email);
   void setPassword(String password);
   void setPhoto(String photo);
   
