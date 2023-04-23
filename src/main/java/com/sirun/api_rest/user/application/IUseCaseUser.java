@@ -4,8 +4,8 @@ import com.sirun.api_rest.user.model.User;
 
 public interface IUseCaseUser {
 
-  User create(User user);
-  User update(User user);
-  void delete(String email);  
-  User findByEmail(String email);
+  User createUser(User user);
+  User updateUser(User user);
+  void deleteUser(String email);  
+  User findUserByEmail(String email);
 }
