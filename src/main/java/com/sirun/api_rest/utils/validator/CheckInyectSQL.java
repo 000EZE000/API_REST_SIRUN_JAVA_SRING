@@ -5,15 +5,16 @@ import com.sirun.api_rest.user.model.User;
 
 public class CheckInyectSQL {
   public static boolean isInyectSQL(User user){
-    return isSymbol(user.getName()) ||
-            isSymbol(user.getLastName()) ||
-            isSymbol(user.getEmail()) ||
-            isSymbol(user.getPassword()) ||
-            isSymbol(user.getPhoto());
+    return isStringInyectSQL(user.getName()) ||
+            isStringInyectSQL(user.getLastName()) ||
+            isStringInyectSQL(user.getEmail()) ||
+            isStringInyectSQL(user.getPassword()) ||
+            isStringInyectSQL(user.getPhoto());
 }
 
-public static boolean isSymbol(String word){
+public static boolean isStringInyectSQL(String word){
     String formatWord = word.toLowerCase();
+    
     return formatWord.contains(" where ")? 
       true: formatWord.contains("where ")? 
       true: formatWord.contains(" where")? 
@@ -23,6 +24,5 @@ public static boolean isSymbol(String word){
       true: formatWord.contains("1=1")? 
       true: formatWord.contains(";")? true : false; 
 
-    
   }
 }
